@@ -34,28 +34,28 @@ function App() {
   }, [fromMain, isSent]);
 
   return (
-    <div className="flex flex-col h-screen">
+    <div className="flex h-screen flex-col">
       {window.Main && (
         <div className="flex-none">
           <AppBar />
         </div>
       )}
       <div className="flex-auto">
-        <div className=" flex flex-col justify-center items-center h-full bg-gray-800 space-y-4">
+        <div className=" flex h-full flex-col items-center justify-center space-y-4 bg-gray-800">
           <h1 className="text-2xl text-gray-200">Vite + React + Typescript + Electron + Tailwind</h1>
           <button
-            className="bg-yellow-400 py-2 px-4 rounded focus:outline-none shadow hover:bg-yellow-200"
+            className="rounded bg-yellow-400 py-2 px-4 shadow hover:bg-yellow-200 focus:outline-none"
             onClick={handleToggle}
           >
             Click Me
           </button>
           {isOpen && (
-            <div className="flex flex-col space-y-4 items-center">
+            <div className="flex flex-col items-center space-y-4">
               <div className="flex space-x-3">
                 <h1 className="text-xl text-gray-50">💝 Welcome 💝, now send a message to the Main 📩📩</h1>
                 <button
                   onClick={sendMessageToElectron}
-                  className=" bg-green-400 rounded px-4 py-0 focus:outline-none hover:bg-green-300"
+                  className=" rounded bg-green-400 px-4 py-0 hover:bg-green-300 focus:outline-none"
                 >
                   Send
                 </button>
