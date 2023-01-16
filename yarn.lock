@@ -3082,7 +3082,12 @@
   dependencies:
     "fast-diff" "^1.1.2"
 
-"prettier@>=2.0.0", "prettier@2.6.0":
+"prettier-plugin-tailwindcss@^0.2.1":
+  "integrity" "sha512-aIO8IguumORyRsmT+E7JfJ3A9FEoyhqZR7Au7TBOege3VZkgMvHJMkufeYp4zjnDK2iq4ktkvGMNOQR9T8lisQ=="
+  "resolved" "https://registry.npmjs.org/prettier-plugin-tailwindcss/-/prettier-plugin-tailwindcss-0.2.1.tgz"
+  "version" "0.2.1"
+
+"prettier@>=2.0.0", "prettier@>=2.2.0", "prettier@2.6.0":
   "integrity" "sha512-m2FgJibYrBGGgQXNzfd0PuDGShJgRavjUoRCw1mZERIWVSXF0iLzLm+aOqTAbLnC3n6JzUhAA8uZnFVghHJ86A=="
   "resolved" "https://registry.npmjs.org/prettier/-/prettier-2.6.0.tgz"
   "version" "2.6.0"
