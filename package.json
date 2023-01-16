@@ -18,7 +18,7 @@
   },
   "productName": "vite-reactts-electron-starter",
   "scripts": {
-    "dev": "concurrently \"yarn dev:vite\" \" yarn dev:electron\"",
+    "dev": "concurrently \"npm run dev:vite\" \" npm run dev:electron\"",
     "dev:vite": "vite",
     "dev:electron": "npm run build:electron && electron .",
     "build": "npm run build:vite && npm run build:electron",
@@ -47,7 +47,7 @@
     "autoprefixer": "^10.4.4",
     "concurrently": "^7.0.0",
     "electron": "^17.1.2",
-    "electron-builder": "^22.14.13",
+    "electron-builder": "^23.6.0",
     "eslint": "8.11.0",
     "eslint-config-airbnb": "19.0.4",
     "eslint-config-prettier": "8.5.0",

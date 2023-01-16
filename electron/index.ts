@@ -3,6 +3,8 @@ import { join } from 'path';
 
 // Packages
 import { BrowserWindow, app, ipcMain, IpcMainEvent } from 'electron';
+import * as path from 'path';
+import * as fs from 'fs';
 import isDev from 'electron-is-dev';
 
 const height = 600;
@@ -76,6 +78,9 @@ app.on('window-all-closed', () => {
 
 // listen the channel `message` and resend the received message to the renderer process
 ipcMain.on('message', (event: IpcMainEvent, message: any) => {
+  const filePath = path.join(app.getPath('appData'), 'message.json');
+  console.log(filePath);
+  fs.writeFileSync(filePath, JSON.stringify(message));
   console.log(message);
   setTimeout(() => event.sender.send('message', 'hi from electron'), 500);
 });
